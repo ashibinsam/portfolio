@@ -9,7 +9,7 @@ h1 {
  }
 
  body {
-    background-image: url("Background.jpg");
+    background-image: url("res/Background.jpg");
     color:aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
