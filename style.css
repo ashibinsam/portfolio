@@ -9,10 +9,11 @@ h1 {
  }
 
  body {
-    background-image: url("res/Background.jpg");
+    background-color: #323133;
     color:aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 2em;
  }
 
  .links{
@@ -20,4 +21,22 @@ h1 {
  }
  .links a{
    padding: 1em;
+ }
+ .content p {
+   min-width: 200px;
+   line-height: 1.8em;
+   word-spacing:.15em;
+   margin-top: .5em;
+   text-align: justify;
+ }
+ .content h2 {
+   margin-top: 1em;
+   margin-bottom: 0em;
+ }
+ span {
+   font-weight: lighter;
+ }
+ .institute {
+   font-size: 1.4em;
+   font-weight: 300;
  }
