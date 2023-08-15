@@ -1,19 +1,22 @@
 h1 {
     text-align:center;
     font-size: 3em;
-    font-weight: 50;
+    font-weight: 100;
  }
  h2{
    font-size: 2em;
-    font-weight:50;
+    font-weight:100;
+    margin-bottom: .8em;
+    margin-top: 1.2em;
  }
 
  body {
     background-color: #323133;
     color:aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     padding: 2em;
+    font-weight: 50;
  }
 
  .links{
@@ -29,14 +32,18 @@ h1 {
    margin-top: .5em;
    text-align: justify;
  }
- .content h2 {
-   margin-top: 1em;
-   margin-bottom: 0em;
- }
+
  span {
    font-weight: lighter;
  }
  .institute {
    font-size: 1.4em;
    font-weight: 300;
+ }
+
+ .designation {
+   margin: .1em .1em .1em 0em;
+ }
+ .period {
+   margin-bottom: 1.2em;
  }
