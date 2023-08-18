@@ -4,6 +4,8 @@ const dynamicWords = [" a Software Developer", " an Embedded Systems Developer",
 let letterIndex = 0;
 let wordIndex =0;
 let cursorState=true;
+const typingSpeed = 110;
+const cursorBlinkingSpeed = 300;
 
 function printLetters(phrase) {
     for(element of typing) {
@@ -12,7 +14,8 @@ function printLetters(phrase) {
             element.textContent = phrase;
             if(letterIndex == 0) {
                 wordIndex++; 
-                wordIndex = wordIndex<dynamicWords.length ? wordIndex : 0;
+                //wordIndex = wordIndex<dynamicWords.length ? wordIndex : 0;  //this is complicated implementation
+                wordIndex %= dynamicWords.length;   // this is a simpler implementation of the above commeted line
                 element.textContent = "";
                 setTimeout(function() {printLetters(dynamicWords[wordIndex])},200);
             }
@@ -28,7 +31,7 @@ function printLetters(phrase) {
             letterIndex++;
             // console.log("element length:" + element.textContent.length);
             // console.log("phrase length:" + phrase.length);
-            setTimeout(function() {printLetters(phrase)},110);
+            setTimeout(function() {printLetters(phrase)},typingSpeed);
         }
         
         
@@ -42,12 +45,12 @@ function printCursor() {
     if(cursorState == false) {
         cursorState = true;
         text.textContent = "|";
-        setTimeout(()=>printCursor(),300);
+        setTimeout(()=>printCursor(),cursorBlinkingSpeed);
     }
     else {
         cursorState = false;
         text.innerHTML = "&nbsp";
-        setTimeout(()=>printCursor(),300);
+        setTimeout(()=>printCursor(),cursorBlinkingSpeed);
     }
     
 }
