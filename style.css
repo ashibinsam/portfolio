@@ -1,7 +1,6 @@
-* {
-  box-sizing: content-box;
+html {
+  scroll-behavior: smooth;
 }
-
 h1 {
     text-align:center;
     font-size: 3em;
@@ -41,6 +40,7 @@ h1 {
  }
 
  input, textarea,button{
+  box-sizing: border-box;
   font-size: 1em;
   display:block;
   margin: .6em 0em .6em 0em;
@@ -48,16 +48,41 @@ h1 {
   max-width: 70%;
   min-height: 2em;
   border-radius: .5em;
+  padding: 0em .3em;
  }
 
  button {
-  min-width: 19.7em;
+  min-width: 20em;
   margin-top: 2em;
+  background-color: #323133;
+  border: solid white .08em;
+  color: white;
  }
 
  label {
   font-size: 1em;
   font-weight: 300;
+ }
+
+ header nav {
+  padding: 1em;
+  width: 35em;
+  margin: auto;
+ }
+
+ header nav > a {
+  margin: 2.2%;
+  font-weight: 400;
+ }
+
+ .navigation {
+  margin-bottom: 1em;
+  background-color: aliceblue;
+  width: 120%;
+  margin-right: -2.4em;
+  margin-left: -2.4em;
+  margin-top: -2.4em;
+  
  }
 
  .links{
@@ -67,7 +92,7 @@ h1 {
    padding: .5em 1.2em;
 
  }
- .content .about {
+.about {
    min-width: 200px;
    line-height: 1.8em;
    word-spacing:.15em;
@@ -94,13 +119,14 @@ h1 {
  .typing {
   color: bisque;
  }
- form#contact {
+ #my-contact-form {
 
   max-width: 20.3em;
   margin: auto;
   border: solid white;
   border-radius: .5em;
   padding: .8em 2em;
+  padding-top: 0em;
   margin-top: 4em;
   
  }

@@ -5,50 +5,72 @@
         <link rel="stylesheet" href="style.css">
         
         <title>Shibin Sam</title>
-        <link rel="icon" type="image/x-icon" href="black-briefcase.png">
+        <link rel="icon" type="image/x-icon" href="res/black-briefcase.png">
     </head>
     <body>
-        <div class="links">
+
+        <section class="navigation">
+            <header>
+                <nav>
+                    <a href="#about-me">About</a>
+                    <a href="#about-my-jurney">About My Jurney</a>
+                    <a href="#my-qualifications">Qualifications</a>
+                    <a href="#my-contact-form">Contact Me</a>
+                </nav>
+            </header>
+        </section>
+
+        <main class="container">
+            <article class="links">
             <a href="https://www.linkedin.com/in/ashibinsam/" target="_blank"><img src="res/linkedin-square-logo.png" width="50"></a>
             <a href="https://www.github.com/ashibinsam/" target="_blank"><img src="res/github-mark-white.png" width="50"></a>
-        </div>
-        <div class="heading">
+            </article>
+        <article class="heading">
             <h1 class=>Hi there! I'm Shibin Sam</h1>
             <h3 id="intro">I am<span class="dynamicText"></span><span id="cursor"></span></h3>
-        </div>
+        </article>
         
         <hr>
-        <div class="content">
-            <h2>About </h2>
-            <p class="about">
-                An enthusiastic engineer and a creator who aims to create solutions for real world problems using technology. 
-                I'm good at algorithmic problem solving and providing solutions real world problems.
-            <h2>About my jurney into Engineering!</h2>
-            <p class="about">
-                I've got passion towards finding and creating new things, asking questions right from my childhood. I've participated in a science competition during my 11th grade. 
-                I saw the arduino uno R3 and fell in love with it right away.
-                I did have passion for electronics and technology. 
-                They came to life once I saw it. 
-                I was really happy and got an arduino and a bunch of sensors right away. 
-                My first sensor was the ultrasonic sensor, which I used to create a device which can measure our height. 
-                From there I went on to create various poject for fun and for some science competitons which had increased my programming skills. 
-                I've learnt C++ and Python simultaneously in the school sylabus which helped me a lot in becomming familiar with various languages and some simple algorithms.
-                By this time, I've decided to go pursue Engineering.
-            </p>
-            <hr>
-            <h2>My Qualifications</h2>
-            <span class="institute">St. Xavier's Catholic College of Engineering</span>
-            <p class="designation">B.Tech Information Technology</p>
-            <p class="period">(2020 - present)</p>
-            <span class="institute">Anitha Kumaran Matric Higher Secondary School</span>
-            <p class="designation">HSC</p>
-            <p class="period">(2018 - 2020)</p>
-            <span class="institute">Beschi Higher Secondary School</span>
-            <p class="designation">SSLC</p>
-            <p class="period">(2016 - 2018)</p>
-        </div>
+        <article class="content">
+            <section id="about-me">
+                <h2>About </h2>
+                <p class="about">
+                    An enthusiastic engineer and a creator who aims to create solutions for real world problems using technology. 
+                    I'm good at algorithmic problem solving and providing solutions real world problems.
+                </p>
+            </section>
 
-        <div class="contact-form">
+            <section id="about-my-jurney">
+                <h2>About my jurney into Engineering!</h2>
+                    <p class="about">
+                        I've got passion towards finding and creating new things, asking questions right from my childhood. I've participated in a science competition during my 11th grade. 
+                        I saw the arduino uno R3 and fell in love with it right away.
+                        I did have passion for electronics and technology. 
+                        They came to life once I saw it. 
+                        I was really happy and got an arduino and a bunch of sensors right away. 
+                        My first sensor was the ultrasonic sensor, which I used to create a device which can measure our height. 
+                        From there I went on to create various poject for fun and for some science competitons which had increased my programming skills. 
+                        I've learnt C++ and Python simultaneously in the school sylabus which helped me a lot in becomming familiar with various languages and some simple algorithms.
+                        By this time, I've decided to go pursue Engineering.
+                    </p>
+            </section>
+            <hr>
+            <section id="my-qualifications" class="qualifications">
+                <h2>My Qualifications</h2>
+                    <span class="institute">St. Xavier's Catholic College of Engineering</span>
+                    <p class="designation">B.Tech Information Technology</p>
+                    <p class="period">(2020 - present)</p>
+                    <span class="institute">Anitha Kumaran Matric Higher Secondary School</span>
+                    <p class="designation">HSC</p>
+                    <p class="period">(2018 - 2020)</p>
+                    <span class="institute">Beschi Higher Secondary School</span>
+                    <p class="designation">SSLC</p>
+                    <p class="period">(2016 - 2018)</p>
+            </section>
+
+        </article>
+
+        <article id="my-contact-form" class="contact-form">
             <form name="contact" method="post" action="https://forms.un-static.com/forms/df176d5f19717c6b17e08c43f62356bf100fda5a" id="contact">
                 <h2>Contact Me</h2>
 
@@ -62,10 +84,12 @@
                 <input type="email" name="email" id="email">
 
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="20" rows="5" placeholder="Type your message here"></textarea>
+                <textarea name="message" id="message" cols="20" rows="2" placeholder="Type your message here"></textarea>
                 <button id="submit" type="submit" name="submit">Submit</button>
             </form>
-            </div>
+            </article>
+        </main>
+        
         <script src="main.js">
 
             
