@@ -76,6 +76,10 @@ h1 {
   font-weight: 400;
  }
 
+ header nav > a:hover{
+  color: #7377da;
+ }
+
  .navigation {
   box-sizing: border-box;
   margin-bottom: 1em;
@@ -124,7 +128,7 @@ h1 {
    margin: .0em .1em -.8em 0em;
  }
  .period {
-   margin-bottom: .6em;
+   margin-bottom: .6em;̥
  }
  .typing {
   color: bisque;
