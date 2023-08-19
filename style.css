@@ -65,9 +65,10 @@ h1 {
  }
 
  header nav {
-  padding: 1em;
+  padding: .8em;
   width: 35em;
   margin: auto;
+  height: 1em;
  }
 
  header nav > a {
@@ -76,8 +77,10 @@ h1 {
  }
 
  .navigation {
+  box-sizing: border-box;
   margin-bottom: 1em;
   background-color: aliceblue;
+  height: 3em;
   width: 120%;
   margin-right: -2.4em;
   margin-left: -2.4em;
@@ -104,6 +107,13 @@ h1 {
  span {
    font-weight: lighter;
  }
+
+ footer {
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: -1em;
+ }
+
  .institute {
    font-size: 1.4em;
    font-weight: 300;
