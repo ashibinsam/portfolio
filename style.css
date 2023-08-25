@@ -74,21 +74,25 @@ h1 {
  header nav > a {
   margin: 2.2%;
   font-weight: 400;
+  color: rgb(196, 193, 193);
  }
 
  header nav > a:hover{
-  color: #777bea;
+  color: #ffffff;
  }
 
  .navigation {
   box-sizing: border-box;
   margin-bottom: 1em;
-  background-color: aliceblue;
+  background-color: #323133;
   height: 3em;
-  width: 120%;
+  width: 117%;
   margin-right: -2.4em;
   margin-left: -2.4em;
   margin-top: -2.4em;
+  position: sticky;
+  top: 0;
+  display: flex;
   
  }
 
