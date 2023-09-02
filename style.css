@@ -66,9 +66,10 @@ h1 {
 
  header nav {
   padding: .8em;
-  width: 35em;
+  width: 44em;
   margin: auto;
   height: 1em;
+  display: flex;
  }
 
  header nav > a {
@@ -85,14 +86,14 @@ h1 {
   box-sizing: border-box;
   margin-bottom: 1em;
   background-color: #323133;
-  height: 3em;
+  height: 6em;
   width: 117%;
   margin-right: -2.4em;
   margin-left: -2.4em;
   margin-top: -2.4em;
   position: sticky;
   top: 0;
-  display: flex;
+  
   
  }
 
@@ -100,7 +101,8 @@ h1 {
    text-align: right;
  }
  .links a{
-   padding: .5em 1.2em;
+   padding: 0em 1.2em;
+   margin-top: 5rem;
 
  }
 .about {
